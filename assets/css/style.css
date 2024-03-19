@@ -1,26 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Project:  MedNote
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Header
-3. Banner Section
-4. About Us Section
-5. Services Section
-6. Choose us Section
-7. Case study Section
-8. Testimonials Section
-9. Partner Section
-10. FAQ's Section
-11. Footer Section
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
-
 :root {
     --e-global-color-primary: #262626;
     --e-global-color-secondary: #2be0f7;
@@ -37,11 +15,9 @@ Project:  MedNote
     --e-gradient-1:#02162d;
     --e-gradient-2:#36e0f7;
 }
-
 body{
     font-family: 'Ubuntu', sans-serif;
 }
-
 .h1, h1 {
     font-size: 66px;
     line-height: 72px;
@@ -93,9 +69,6 @@ p {
     font-size: 16px;
     line-height: 22px;
 }
-
-/* Home Page Style */
-
 .banner_outer{
     background: url("../images/banner-background.png");
     background-position: center;
@@ -111,7 +84,6 @@ p {
     left: -38px;
     top: -14px;
 }
-
 .navbar-collapse ul{
     align-items: center; 
     display: inherit; 
@@ -131,6 +103,9 @@ p {
 .navbar-nav .active > a{
     color: var(--e-global-color-secondary) !important;
 }
+.navbar-nav .lets_talk > a{
+    color: var(--e-global-color-secondary) !important;
+}
 .navbar-nav .nav-item .lets_talk{
     font-size: 18px;
     line-height: 18px;
@@ -140,11 +115,11 @@ p {
     text-align: center;
     display: inline-block;
     border-radius: 30px 30px 30px 0;
-    color: var(--e-global-color-white) !important;
+    color: var(--e-global-color-white);
     background-image: linear-gradient(to right, var(--e-gradient-1) 0%, var(--e-gradient-2) 100%);
 }
 .navbar-nav .nav-item .lets_talk:hover{
-    color: var(--e-global-color-white) !important;
+    color: var(--e-global-color-white);
     background-image: linear-gradient(to right,  var(--e-gradient-1) 0%, var(--e-gradient-2) 100%);
 }
 .navbar-nav .nav-item .lets_talk:hover .circle{
@@ -315,9 +290,6 @@ p {
     top: -116px;
     left: -210px;
 }
-
-/* About us */
-
 .about-section{
     padding: 160px 0 172px;
 }
@@ -394,9 +366,6 @@ p {
     transition: all 0.3s ease;
     color: var(--e-global-color-dark-blue);
 }
-
-/* Services */
-
 .service-section{
     background-color: #eafcfe;
     background-position: center;
@@ -501,9 +470,6 @@ p {
 .service-section .service_contentbox .box-top{
     padding-top: 30px;
 }
-
-/* Why choose us */
-
 .choose-section{
     background: url("../images/choose-background.png");
     background-position: center;
@@ -611,9 +577,6 @@ p {
     right: 0;
     bottom: 0;
 }
-
-/* Case Study */
-
 .study-section {
     padding: 130px 0 140px;
 }
@@ -725,9 +688,6 @@ p {
     transition: all 0.3s ease;
     color: var(--e-global-color-dark-blue);
 }
-
-/* Testimonial */
-
 .testimonial-section{
     background-color: #eafcfe;
     background-position: center;
@@ -887,9 +847,6 @@ p {
 .testimonial-section .partner-section .partner li:last-child{
     margin-right: 0;
 }
-
-/* FAQ / Need*/
-
 .faq-section{
     padding: 182px 0 142px;
     position: relative;
@@ -935,8 +892,6 @@ p {
     text-align: left;
     display: block;
 }
-
-
 .faq-section .faq_content h5{
     margin-bottom: 10px;
 }
@@ -948,7 +903,6 @@ p {
 }
 .faq-section .faq_content h4{
     font-weight: 500;
-    /* margin-bottom: 16px; */
     display: inline-block;
 }
 .faq-section .faq_content .text-size-16{
@@ -985,12 +939,10 @@ p {
     text-align: center;
 }
 .faq-section .faq_content a{
-
     font-size: 18px;
     line-height: 18px;
     color: var(--e-global-color-white);
 }
-
 .faq-section .need-section{
     padding-left: 45px;
     margin-top: -20px;
@@ -1094,9 +1046,6 @@ p {
     transition: all 0.3s ease;
     color: var(--e-global-color-dark-blue);
 }
-
-/* Footer */
-
 .footer-section{
     background: url(../images/footer-background.png);
     background-position: center;
@@ -1104,7 +1053,6 @@ p {
     background-size: cover;
     padding-top: 100px;
     position: relative;
-    /* overflow: hidden; */
 }
 .footer-section .footer-logo{
     margin-bottom: 8px;
@@ -1124,7 +1072,7 @@ p {
     line-height: 30px;
 }
 .footer-section .middle-portion .heading{
-   margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 .footer-section .middle-portion .social-icons .circle{
     display: inline-block;
@@ -1302,9 +1250,6 @@ p {
     color: var(--e-global-color-white);
     background-image: linear-gradient(to right, #052b45 0%, #052b45 51%, #052b45 100%);
 }
-
-/* Projects Page */
-
 .sub-banner {
     background: url("../images/sub-bannerbackgroung.png");
     background-position: center;
@@ -1378,9 +1323,6 @@ p {
     bottom: -360px;
     right: -396px;
 }
-
-/* About Page */
-
 .aboutpage-section{
     padding: 162px 0 146px;
 }
@@ -1471,9 +1413,6 @@ p {
     transition: all 0.3s ease;
     color: var(--e-global-color-dark-blue);
 }
-
-/* Counter */
-
 .counter-section{
     background-color: #eafcfe;
     background-position: center;
@@ -1531,9 +1470,6 @@ p {
     padding: 162px 0 142px;
     position: relative;
 }
-
-/* FAQ Page */
-
 .accordian-section{
     padding: 133px 0;
     position: relative;
@@ -1627,9 +1563,6 @@ p {
     border-radius: 100px;
     text-align: center;
 }
-
-/* Team Page */
-
 .team-section{
     background-color: #eafcfe;
     background-position: center;
@@ -1702,9 +1635,6 @@ p {
     background-image: linear-gradient(to right, #042237 0%, #042237 51%, #042237 100%);
     border: 1px solid #17677e;
 }
-
-/* Service Page */
-
 .provide-section{
     background-color: #eafcfe;
     background-position: center;
@@ -1782,9 +1712,6 @@ p {
     color: var(--e-global-color-secondary);
     text-transform: uppercase;
 }
-
-/* Contact Page Style */
-
 .contact-section{
     padding: 146px 0 112px;
     position: relative;
